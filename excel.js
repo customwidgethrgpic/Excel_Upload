@@ -346,24 +346,30 @@
                                 var rec_count = 0;
 
                                 var len = 0;
-                                if (lengthfield === 7) {
+                                if (lengthfield === 11) {
                                     for (var i = 1; i < result.split("[$@~!~@$]").length; i++) {
                                         if (result.split("[$@~!~@$]")[i].length > 0) {
 
                                             var rec = result.split("[$@~!~@$]")[i].split("[#@~!~@#]");
                                             if (rec.length > 0) {
-                                                len = rec[0].trim().length + rec[1].trim().length + rec[2].trim().length + rec[3].trim().length + rec[4].trim().length + rec[
-                                                    5].trim().length + rec[6].trim().length;
+                                                len = rec[0].trim().length + rec[1].trim().length + rec[2].trim().length + rec[3].trim().length + rec[4].trim().length + 
+                                                    rec[5].trim().length + rec[6].trim().length + rec[7].trim().length + rec[8].trim().length + rec[9].trim().length +
+                                                    rec[10].trim().length + rec[11].trim().length;
+                                                    
                                                 if (len > 0) {
                                                     rec_count = rec_count + 1;
                                                     result_final.push({
                                                       'ID': rec[0].trim(),
-                                                      'DESCRIPTION': rec[1].trim(),
-                                                      'ASSET_TYPE': rec[2].trim(),
-                                                      'COMPANY_CODE': rec[3].trim(),
-                                                      'ASSET_CLASS': rec[4].trim(),
-                                                      'COST_CENTER': rec[5].trim(),
-                                                      'CWIP': rec[6].trim(),
+                                                      'Description': rec[1].trim(),
+                                                      'H1': rec[2].trim(),
+                                                      'Gender': rec[3].trim(),
+                                                      'Hire_Month': rec[4].trim(),
+                                                      'Status': rec[5].trim(),
+                                                      'Pay_Grade': rec[6].trim(),
+                                                      'Department': rec[7].trim(),
+                                                      'Job_Code': rec[8].trim(),
+                                                      'Cost_Center': rec[9].trim(),
+                                                      'Citizen': rec[10].trim(),
                                                     });
                                                 }
                                             }
