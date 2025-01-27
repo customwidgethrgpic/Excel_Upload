@@ -135,7 +135,7 @@
         onCustomWidgetAfterUpdate(changedProperties) {
             var that = this;
 
-          let xlsxjs = "https://customwidgethrgpic.github.io/Excel-Upload/New_xlsx.js";
+          let xlsxjs = "https://customwidgethrgpic.github.io/Excel_Upload/xlsx.js";
             async function LoadLibs() {
                 try {
                     await loadScript(xlsxjs, _shadowRoot);
