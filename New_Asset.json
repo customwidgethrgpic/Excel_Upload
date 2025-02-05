@@ -13,14 +13,14 @@
     {
       "kind": "main",
       "tag": "com-fd-djaja-sap-sac-excel",
-      "url": "https://customwidgethrgpic.github.io/Excel_Upload/New_Asset_excelJS.js",
+      "url": "https://customwidgethrgpic.github.io/Excel_Upload/New_Asset_excel.JS.js",
       "integrity": "",
       "ignoreIntegrity": true
     },
     {
       "kind": "styling",
       "tag": "com-fd-djaja-sap-sac-excel-aps",
-      "url": "https://customwidgethrgpic.github.io/Excel_Upload//New_Asset_excelJS.js",
+      "url": "https://customwidgethrgpic.github.io/Excel_Upload//New_Asset_excel.JS.js",
       "integrity": "",
       "ignoreIntegrity": true
     }
