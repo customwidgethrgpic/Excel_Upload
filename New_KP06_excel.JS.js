@@ -357,13 +357,16 @@
                                                 if (len > 0) {
                                                     rec_count = rec_count + 1;
                                                     result_final.push({
-                                                      'ASSET': rec[0].trim(),
-                                                      'DESCRIPTION': rec[1].trim(),
-                                                      'ASSET_TYPE': rec[2].trim(),
-                                                      'COMPANY_CODE': rec[3].trim(),
-                                                      'ASSET_CLASS': rec[4].trim(),                                             
-                                                       'COST_CENTER': rec[5].trim(),                                                       
-                                                        'CWP':rec[6].trim(),                                                       
+                    
+                                                      'DATE':rec[1].trim();
+                                                       'VERSION':rec[2].trim();
+                                                       'COST_CENTER': rec[3].trim(),
+                                                        'ASSET_TYPE': rec[4].trim(),
+                                                         'SKF':rec[5].trim();
+                                                         'PCOSTCENTER':rec[6].trim();
+                                                          'AUDIT':rec[7].trim();
+                                                           'COMPANY_CODE': rec[8].trim(),
+                                                            'GL_ACCOUNT': rec[9].trim();
                                                     });
                                                 }
                                             }
